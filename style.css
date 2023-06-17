@@ -1,0 +1,96 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: var(--primary-color);
+    font-family: sans-serif;
+    outline: none;
+}
+:root{
+    --primary-color: #ecf0f3; 
+    --secondary-color: #000000;
+    --third-color: #ffffff;
+    --forth-color: #00000017;
+    --fifth-color:  rgb(81, 240, 240);
+}
+.dark-theme{
+    --primary-color: #1b1b1b;
+    --secondary-color: #ffffff; 
+    --third-color: #000000;
+    --forth-color: #1e1e1e4b;
+}
+#icon{
+    width: 30px;
+    cursor: pointer;
+}
+.container{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.calculator{
+    background-color: var(--primary-color);
+    padding: 15px;
+    border-radius: 30px;
+    box-shadow: inset 5px 5px 12px var(--third-color),
+                      5px 5px 12px var(--forth-color);
+    display: grid;
+    grid-template-columns: repeat(4,70px);
+}
+input{
+    grid-column: span 4;
+    height: 70px;
+    width: 260px;
+    background-color: var(--primary-color);
+    box-shadow: inset -5px -5px 12px var(--third-color),
+                inset 5px 5px 12px var(--forth-color);
+    border: none;
+    border-radius: 30px;
+    color: var(--secondary-color);
+    font-size: 50px;
+    text-align: end;
+    margin: auto;
+    margin-top: 40px;
+    margin-bottom: 30px;
+    padding: 20px;
+}
+button{
+    height: 48px;
+    width: 48px;
+    background-color: var(--primary-color);
+    box-shadow: inset -5px -5px 12px var(--forth-color),
+                       5px 5px 12px var(--forth-color);
+    border: none;
+    border-radius: 50%;
+    margin: 8px;
+    font-size: 16px;
+    color: black;
+}
+.equal{
+    width: 115px;
+    border-radius: 40px;
+    font-size: 25px;
+    font-weight: bold;
+    background-color: rgb(61, 196, 61);
+    /* box-shadow: inset -5px -5px 12px var(--third-color),
+                       5px 5px 12px var(--forth-color); */
+}
+.no{
+    background-color: var(--fifth-color);
+    font-weight: bold;
+}
+.cl,.dl{
+    background-color: rgb(232, 37, 37);
+    font-weight: bold;
+}
+.op{
+    background-color: rgb(210, 72, 21);
+    font-size: 22px;
+    font-weight: bold;
+}
+.opp{
+    background-color: rgb(210, 72, 21);
+    font-size: 20px;
+    font-weight: 900;
+}

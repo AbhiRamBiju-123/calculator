@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Calculator</title>
+</head>
+<body>
+    <div class="container">
+        <div class="calculator">
+            <img src="./moon.png" id="icon">
+            <input type="text" placeholder="0" id="output">
+            <button onclick="Clear()" class="cl">CL</button>
+            <button onclick="del()" class="dl">DEL</button>
+            <button onclick="display('%')" class="op">%</button>
+            <button onclick="display('/')" class="op">/</button>
+            <button onclick="display('7')" class="no">7</button>
+            <button onclick="display('8')" class="no">8</button>
+            <button onclick="display('9')" class="no">9</button>
+            <button onclick="display('*')" class="op">*</button>
+            <button onclick="display('4')" class="no">4</button>
+            <button onclick="display('5')" class="no">5</button>
+            <button onclick="display('6')" class="no">6</button>
+            <button onclick="display('-')" class="op">-</button>
+            <button onclick="display('1')" class="no">1</button>
+            <button onclick="display('2')" class="no">2</button>
+            <button onclick="display('3')" class="no">3</button>
+            <button onclick="display('+')" class="op">+</button>
+            <button onclick="display('.')" class="opp">.</button>
+            <button onclick="display('0')" class="no">0</button>
+            <button onclick="calculate()" class="equal">=</button>
+        </div>
+    </div>   
+</body>
+<script src="./calculator.js">
+</script>
+</html>
